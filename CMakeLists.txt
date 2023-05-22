@@ -32,7 +32,7 @@ configure_file(
 
 configure_file(config.h.cmake ${SPEEXDSP_FOLDER}/config.h)
 
-add_library(speexdsp SHARED ${SPEEXDSP_SOURCE}/resample.c
+add_library(speexdsp STATIC ${SPEEXDSP_SOURCE}/resample.c
         ${SPEEXDSP_SOURCE}/buffer.c
         ${SPEEXDSP_SOURCE}/fftwrap.c
         ${SPEEXDSP_SOURCE}/filterbank.c
